@@ -1,2 +1,27 @@
-html {box-sizing:border-box;}
-*, *::before, *::after {box-sizing:inherit;}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.product img {
+  max-width: 200px;
+}
